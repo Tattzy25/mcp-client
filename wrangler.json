@@ -7,7 +7,7 @@
     "directory": "dist/client"
   },
   "vars": {
-    "HOST": "<PLACEHOLDER_HOST>"
+    "HOST": "the_client"
   },
   "durable_objects": {
     "bindings": [
@@ -22,6 +22,9 @@
       "tag": "v1",
       "new_sqlite_classes": ["MyAgent"]
     }
+  },
+  "analytics_engine_datasets": [
+    { "binding": "ANALYTICS_ENGINE", "dataset": "MCPS" }
   ],
   "observability": {
     "logs": {
